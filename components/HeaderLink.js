@@ -1,7 +1,8 @@
-function HeaderLink() {
+function HeaderLink({ Icon, text }) {
     return (
-        <div>
-            <p>Header</p>
+        <div className="flex flex-col items-center">
+            <Icon />
+            <p>{text}</p>
         </div>
     )
 }

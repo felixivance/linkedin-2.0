@@ -1,6 +1,10 @@
 import Head from "next/head"
 import Image from "next/image"
 import HeaderLink from "../components/HeaderLink"
+import ExploreIcon from "@mui/icons-material/Explore";
+import GroupIcon from "@mui/icons-material/Group";
+import OndemandVideoSharpIcon from "@mui/icons-material/OndemandVideoSharp";
+import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 
 function Home() {
     return (
@@ -14,10 +18,10 @@ function Home() {
                 </div>
                 <div className="flex items-center sm:divide-x divide-gray-300 space-x-2">
                     <div className="hidden sm:flex space-x-8 pr-4">
-                        <HeaderLink />
-                        <HeaderLink />
-                        <HeaderLink />
-                        <HeaderLink />
+                        <HeaderLink Icon={ExploreIcon} text="Discover" />
+                        <HeaderLink Icon={GroupIcon} text="People" />
+                        <HeaderLink Icon={OndemandVideoSharpIcon} text="Learning" />
+                        <HeaderLink Icon={BusinessCenterIcon} text="Jobs" />
                     </div>
                 </div>
             </header>
