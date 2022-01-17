@@ -9,7 +9,7 @@ import { ArrowForwardIosRounded } from "@mui/icons-material";
 
 function Home() {
     return (
-        <div>
+        <div className="space-y-10">
             <Head>
                 <title>Welcome To LinkedIn 2.0</title>
             </Head>
@@ -34,7 +34,7 @@ function Home() {
             <main className="flex flex-col xl:flex-row items-center max-w-screen-lg mx-auto">
                 {/* left */}
                 <div className="space-y-6 xl:space-y-10">
-                    <h1 className="text-3xl md:text-5xl text-amber-800/80 max-w-xl !leading-snug pl-14 xl:pl-0">Welcome to your professional community</h1>
+                    <h1 className="text-3xl md:text-5xl text-amber-800/80 max-w-xl !leading-snug pl-14 xl:pl-0 tracking-wide">Welcome to your professional community</h1>
                     <div className="space-y-4">
                         <div className="intent">
                             <h2 className="text-xl">Search for a job</h2>
