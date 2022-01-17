@@ -23,6 +23,11 @@ function Home() {
                         <HeaderLink Icon={OndemandVideoSharpIcon} text="Learning" />
                         <HeaderLink Icon={BusinessCenterIcon} text="Jobs" />
                     </div>
+                    <div className="pl-4">
+                        <button className="text-blue-700 font-semibold px-5 py-1.5 border border-blue-500 rounded-md transition-all hover:border-2">
+                            Sign In
+                        </button>
+                    </div>
                 </div>
             </header>
 
