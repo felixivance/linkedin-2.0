@@ -27,7 +27,7 @@ function Home({ providers }) {
                         <HeaderLink Icon={BusinessCenterIcon} text="Jobs" />
                     </div>
                     <div className="pl-4 flex flex-col sm:inline-flex space-x-2 space-y-2">
-                        <div className="hover:bg-gray-300 rounded-md text-center text-lg text-gray-600">
+                        <div className="hover:bg-gray-300 rounded-md text-center text-sm md:text-lg text-gray-600 ">
                             Join Now
                         </div>
                         {
