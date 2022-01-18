@@ -18,7 +18,7 @@ export default NextAuth({
         signIn: '/home'
     },
     session: {
-        strategy: "jwt"
+        strategy: "jwt" //when using  an adapter you have to explicity select jwt
     },
     debug: true
 })
