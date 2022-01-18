@@ -14,17 +14,20 @@ function Home() {
                 <title>Welcome To LinkedIn 2.0</title>
             </Head>
             <header className="flex justify-around items-center py-4">
-                <div className="relative w-36 h-10">
+                <div className="relative w-28 h-10  sm:w-36 sm:h-10">
                     <Image src="https://rb.gy/vtbzlp" layout="fill" objectFit="contain" />
                 </div>
                 <div className="flex items-center sm:divide-x divide-gray-300 space-x-2">
-                    <div className="hidden sm:flex space-x-8 pr-4">
+                    <div className="flex space-x-8 pr-4">
                         <HeaderLink Icon={ExploreIcon} text="Discover" />
                         <HeaderLink Icon={GroupIcon} text="People" />
                         <HeaderLink Icon={OndemandVideoSharpIcon} text="Learning" />
                         <HeaderLink Icon={BusinessCenterIcon} text="Jobs" />
                     </div>
-                    <div className="pl-4">
+                    <div className="pl-4 flex flex-col sm:inline-flex space-x-2 space-y-2">
+                        <div className="hover:bg-gray-300 rounded-md text-center text-lg text-gray-600">
+                            Join Now
+                        </div>
                         <button className="text-blue-700 font-semibold px-5 py-1.5 border border-blue-500 rounded-md transition-all hover:border-2">
                             Sign In
                         </button>
