@@ -6,8 +6,10 @@ import GroupIcon from "@mui/icons-material/Group";
 import OndemandVideoSharpIcon from "@mui/icons-material/OndemandVideoSharp";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import { ArrowForwardIosRounded } from "@mui/icons-material";
+import { getProviders, signIn } from "next-auth/react";
 
-function Home() {
+function Home({ providers }) {
+
     return (
         <div className="space-y-10 relative">
             <Head>
@@ -28,9 +30,17 @@ function Home() {
                         <div className="hover:bg-gray-300 rounded-md text-center text-lg text-gray-600">
                             Join Now
                         </div>
-                        <button className="text-blue-700 font-semibold px-5 py-1.5 border border-blue-500 rounded-full transition-all hover:border-2">
-                            Sign In
-                        </button>
+                        {
+                            Object.values(providers).map((provider, key) => (
+
+                                <button key={key} className="text-blue-700 font-semibold px-5 py-1.5 border border-blue-500 rounded-full transition-all hover:border-2 cursor-pointer"
+                                    onClick={() => signIn(provider.id, { callbackUrl: "/" })}>
+                                    Sign In
+                                </button>
+
+                            ))
+                        }
+
                     </div>
                 </div>
             </header>
@@ -65,3 +75,15 @@ function Home() {
 }
 
 export default Home
+
+
+export async function getServerSideProps(context) {
+    const providers = await getProviders();
+
+    return {
+        props: {
+            providers
+        }
+    }
+
+}
