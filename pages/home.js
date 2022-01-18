@@ -9,7 +9,7 @@ import { ArrowForwardIosRounded } from "@mui/icons-material";
 
 function Home() {
     return (
-        <div className="space-y-10">
+        <div className="space-y-10 relative">
             <Head>
                 <title>Welcome To LinkedIn 2.0</title>
             </Head>
