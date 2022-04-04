@@ -5,7 +5,7 @@ function Header() {
         <Header>
             {/* left section  */}
             <div className="flex items-center space-x-2 max-w-xs">
-                <Image src="https://rb.gy/dpmd9s" width={55} height={55} />
+                <Image src="https://rb.gy/dpmd9s" width={55} height={55} alt="" />
             </div>
             {/* right section */}
             <div>
