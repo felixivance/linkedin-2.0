@@ -7,7 +7,7 @@ export default function Home() {
     <div className="">
       <Head>
         <title>LinkedIn 2.0</title>
-        <meta name="description" content="Linked in clone" />
+        <meta name="description" content="Linked in clone, developed by Felix" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
